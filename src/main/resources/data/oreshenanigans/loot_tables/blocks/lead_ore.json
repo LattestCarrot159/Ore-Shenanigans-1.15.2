@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:lead_ore"
+          "name": "oreshenanigans:lead_ore"
         }
       ],
       "conditions": [

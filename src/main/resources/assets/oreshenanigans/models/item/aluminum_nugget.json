@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "extensiveengineering:item/aluminum_nugget"
+        "layer0": "oreshenanigans:item/aluminum_nugget"
     }
 }

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:aluminum_ore"
+          "name": "oreshenanigans:aluminum_ore"
         }
       ],
       "conditions": [

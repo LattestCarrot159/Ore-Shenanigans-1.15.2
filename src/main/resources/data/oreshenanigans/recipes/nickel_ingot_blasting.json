@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "forge:ores/nickel"
   },
-  "result": "extensiveengineering:nickel_ingot",
+  "result": "oreshenanigans:nickel_ingot",
   "experience": 0.7,
   "cookingtime": 100
 }

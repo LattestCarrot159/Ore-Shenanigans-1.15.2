@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "extensiveengineering:block/platinum_block" }
+        "": { "model": "oreshenanigans:block/platinum_block" }
     }
 }

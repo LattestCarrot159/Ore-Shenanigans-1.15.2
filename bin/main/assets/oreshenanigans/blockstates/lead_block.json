@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "extensiveengineering:block/lead_block" }
+        "": { "model": "oreshenanigans:block/lead_block" }
     }
 }

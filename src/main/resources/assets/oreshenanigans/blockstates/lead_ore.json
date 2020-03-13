@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "extensiveengineering:block/lead_ore" }
+        "": { "model": "oreshenanigans:block/lead_ore" }
     }
 }

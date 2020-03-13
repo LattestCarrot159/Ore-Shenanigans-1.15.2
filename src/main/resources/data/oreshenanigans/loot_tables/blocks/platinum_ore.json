@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:platinum_ore"
+          "name": "oreshenanigans:platinum_ore"
         }
       ],
       "conditions": [

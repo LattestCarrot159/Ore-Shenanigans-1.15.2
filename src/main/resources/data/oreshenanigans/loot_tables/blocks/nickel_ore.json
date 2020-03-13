@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:nickel_ore"
+          "name": "oreshenanigans:nickel_ore"
         }
       ],
       "conditions": [

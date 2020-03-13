@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "forge:ores/platinum"
   },
-  "result": "extensiveengineering:platinum_ingot",
+  "result": "oreshenanigans:platinum_ingot",
   "experience": 0.7,
   "cookingtime": 100
 }

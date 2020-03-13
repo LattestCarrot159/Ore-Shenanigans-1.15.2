@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "extensiveengineering:block/tin_block" }
+        "": { "model": "oreshenanigans:block/tin_block" }
     }
 }

@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "extensiveengineering:block/silver_ore" }
+        "": { "model": "oreshenanigans:block/silver_ore" }
     }
 }

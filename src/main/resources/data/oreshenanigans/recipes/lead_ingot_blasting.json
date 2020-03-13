@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "forge:ores/lead"
   },
-  "result": "extensiveengineering:lead_ingot",
+  "result": "oreshenanigans:lead_ingot",
   "experience": 0.7,
   "cookingtime": 100
 }

@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "extensiveengineering:block/nickel_ore" }
+        "": { "model": "oreshenanigans:block/nickel_ore" }
     }
 }

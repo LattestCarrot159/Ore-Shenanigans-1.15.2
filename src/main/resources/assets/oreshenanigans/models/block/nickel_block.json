@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "extensiveengineering:block/nickel_block"
+        "all": "oreshenanigans:block/nickel_block"
     }
 }

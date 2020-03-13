@@ -11,6 +11,7 @@ for root, dirs, files in os.walk(path):
             fin = open(filepath, "rt")
             temp = fin.readlines()
             fin.close()
+            
             fout = open(filepath, "wt")
             for i in temp:
                 fout.write(i.replace("extensiveengineering", "oreshenanigans"))
