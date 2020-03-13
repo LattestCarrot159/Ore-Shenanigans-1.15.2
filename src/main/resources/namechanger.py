@@ -1,19 +1,11 @@
 import os
 
-path = os.getcwd()
+fin = open("E:/Coding Shiz/minecraft mods/My Mods/Ore-Shenanigans-1.15.2/src/main/resources/META-INF/mods.toml", "rt")
+temp = fin.readlines()
+fin.close()
 
-for root, dirs, files in os.walk(path):
-    for file in files:
-        filepath = root + os.sep + file
-        
-        if file.endswith((".json")):
-            print(filepath)
-            fin = open(filepath, "rt")
-            temp = fin.readlines()
-            fin.close()
-            
-            fout = open(filepath, "wt")
-            for i in temp:
-                fout.write(i.replace("extensiveengineering", "oreshenanigans"))
-            fout.close()
-            print("Instances Replaced")
+fout = open("E:/Coding Shiz/minecraft mods/My Mods/Ore-Shenanigans-1.15.2/src/main/resources/META-INF/mods.toml", "wt")
+for i in temp:
+    fout.write(i.replace("extensiveengineering", "oreshenanigans"))
+fout.close()
+print("Instances Replaced")
