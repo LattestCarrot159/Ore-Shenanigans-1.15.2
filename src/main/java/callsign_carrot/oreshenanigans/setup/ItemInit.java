@@ -1,6 +1,6 @@
-package callsign_carrot.extensiveengineering.setup;
+package callsign_carrot.oreshenanigans.setup;
 
-import callsign_carrot.extensiveengineering.Reference;
+import callsign_carrot.oreshenanigans.Reference;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;

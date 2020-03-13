@@ -1,6 +1,6 @@
-package callsign_carrot.extensiveengineering.worldgen;
+package callsign_carrot.oreshenanigans.worldgen;
 
-import callsign_carrot.extensiveengineering.setup.BlockInit;
+import callsign_carrot.oreshenanigans.setup.BlockInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;

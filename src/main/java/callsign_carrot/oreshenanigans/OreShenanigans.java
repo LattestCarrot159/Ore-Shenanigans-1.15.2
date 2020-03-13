@@ -1,12 +1,12 @@
-package callsign_carrot.extensiveengineering;
+package callsign_carrot.oreshenanigans;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import callsign_carrot.extensiveengineering.setup.BlockInit;
-import callsign_carrot.extensiveengineering.setup.ItemInit;
-import callsign_carrot.extensiveengineering.setup.ModSetup;
-import callsign_carrot.extensiveengineering.worldgen.ExtensiveOreGen;
+import callsign_carrot.oreshenanigans.setup.BlockInit;
+import callsign_carrot.oreshenanigans.setup.ItemInit;
+import callsign_carrot.oreshenanigans.setup.ModSetup;
+import callsign_carrot.oreshenanigans.worldgen.ExtensiveOreGen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,11 +25,11 @@ import net.minecraftforge.registries.IForgeRegistry;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Reference.MOD_ID)
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID, bus = Bus.MOD)
-public class ExtensiveEngineering {
+public class OreShenanigans {
 	
 	public static ModSetup setup = new ModSetup();
 	
-	public static ExtensiveEngineering instance;
+	public static OreShenanigans instance;
 	public static final String modid = Reference.MOD_ID;
 	public static final String name = Reference.NAME;
 	public static final String version = Reference.VERSION;
@@ -37,7 +37,7 @@ public class ExtensiveEngineering {
 	
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public ExtensiveEngineering() {
+    public OreShenanigans() {
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);

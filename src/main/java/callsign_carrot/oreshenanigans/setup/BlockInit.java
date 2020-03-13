@@ -1,7 +1,7 @@
-package callsign_carrot.extensiveengineering.setup;
+package callsign_carrot.oreshenanigans.setup;
 
-import callsign_carrot.extensiveengineering.Reference;
-import callsign_carrot.extensiveengineering.blocks.MachineBlock1;
+import callsign_carrot.oreshenanigans.Reference;
+import callsign_carrot.oreshenanigans.blocks.MachineBlock1;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

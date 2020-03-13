@@ -1,4 +1,4 @@
-package callsign_carrot.extensiveengineering.blocks;
+package callsign_carrot.oreshenanigans.blocks;
 
 import net.minecraft.block.AbstractGlassBlock;
 import net.minecraft.block.SoundType;
