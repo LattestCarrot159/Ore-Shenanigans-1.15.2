@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:blocks/silver"
+    }
+  ],
+  "result": {
+    "item": "extensiveengineering:silver_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"XXX",
+		"XYX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"tag": "minecraft:planks"
+		},
+		"Y": {
+			"tag": "forge:ingots/copper"
+		}
+	},
+	"result": {
+		"item": "extensiveengineering:machine_block_1"
+	}
+}

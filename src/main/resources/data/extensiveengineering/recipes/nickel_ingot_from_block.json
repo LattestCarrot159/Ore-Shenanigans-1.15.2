@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:blocks/nickel"
+    }
+  ],
+  "result": {
+    "item": "extensiveengineering:nickel_ingot",
+    "count": 9
+  }
+}
