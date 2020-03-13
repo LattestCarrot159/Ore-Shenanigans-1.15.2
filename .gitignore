@@ -124,5 +124,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 bin/main/namechanger.py
+
 *.py
 *.gz
+E:/Coding Shiz/minecraft mods/My Mods/Ore-Shenanigans-1.15.2/run/
