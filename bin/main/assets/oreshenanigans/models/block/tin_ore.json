@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "extensiveengineering:block/tin_ore"
+        "all": "oreshenanigans:block/tin_ore"
     }
 }

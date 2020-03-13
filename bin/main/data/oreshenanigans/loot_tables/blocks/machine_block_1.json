@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:machine_block_1"
+          "name": "oreshenanigans:machine_block_1"
         }
       ],
       "conditions": [

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "extensiveengineering:item/tin_nugget"
+        "layer0": "oreshenanigans:item/tin_nugget"
     }
 }

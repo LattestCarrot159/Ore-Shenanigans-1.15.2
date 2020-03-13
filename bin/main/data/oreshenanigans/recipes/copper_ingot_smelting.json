@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "forge:ores/copper"
   },
-  "result": "extensiveengineering:copper_ingot",
+  "result": "oreshenanigans:copper_ingot",
   "experience": 0.7,
   "cookingtime": 100
 }

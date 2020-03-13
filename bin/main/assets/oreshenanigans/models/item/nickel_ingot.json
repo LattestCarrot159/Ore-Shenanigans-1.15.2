@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "extensiveengineering:item/nickel_ingot"
+        "layer0": "oreshenanigans:item/nickel_ingot"
     }
 }

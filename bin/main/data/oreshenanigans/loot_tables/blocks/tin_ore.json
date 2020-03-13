@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:tin_ore"
+          "name": "oreshenanigans:tin_ore"
         }
       ],
       "conditions": [

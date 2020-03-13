@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "extensiveengineering:silver_ore"
+          "name": "oreshenanigans:silver_ore"
         }
       ],
       "conditions": [
