@@ -1,0 +1,95 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 3/13/20 4:13 AM
+Description: Ticking block entity
+
+java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "Invalid Character", delete this token
+
+	at callsign_carrot.oreshenanigans.tileentity.NuggifierTileEntity.tick(NuggifierTileEntity.java:27) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.tickBlockEntities(World.java:523) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:371) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:884) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:819) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:660) [?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at callsign_carrot.oreshenanigans.tileentity.NuggifierTileEntity.tick(NuggifierTileEntity.java:27)
+
+-- Block entity being ticked --
+Details:
+	Name: oreshenanigans:nuggifier // callsign_carrot.oreshenanigans.tileentity.NuggifierTileEntity
+	Block: Block{oreshenanigans:nuggifier}
+	Block location: World: (184,66,109), Chunk: (at 8,4,13 in 11,6; contains blocks 176,0,96 to 191,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Block: Block{oreshenanigans:nuggifier}
+	Block location: World: (184,66,109), Chunk: (at 8,4,13 in 11,6; contains blocks 176,0,96 to 191,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+Stacktrace:
+	at net.minecraft.world.World.tickBlockEntities(World.java:523)
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:371)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Dev'/176, l='testing', x=184.78, y=65.00, z=111.96]]
+	Chunk stats: ServerChunkCache: 2238
+	Level dimension: DimensionType{minecraft:overworld}
+	Level name: testing
+	Level seed: -8299904908432570164
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (176,66,128), Chunk: (at 0,4,0 in 11,8; contains blocks 176,0,128 to 191,255,143), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 4518 game time, 4518 day time
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 71096 (now: false), thunder time: 88071 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:884)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:819)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:660)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 3257935656 bytes (3107 MB) / 3600285696 bytes (3433 MB) up to 7635730432 bytes (7282 MB)
+	CPUs: 12
+	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx8192m
+	ModLauncher: 5.0.0-milestone.4+67+b1a340b
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-2.0.0-milestone.1-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200227-1.15.1-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200227-1.15.1-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.0.0-milestone.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200227-1.15.1-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200227-1.15.1-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200227-1.15.1-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.1
+	Forge: net.minecraftforge:31.1.0
+	FML Language Providers: 
+		javafml@31.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.15.2 DONE}
+		forge-1.15.2-31.1.0_mapped_snapshot_20200227-1.15.1-recomp.jar Forge {forge@31.1.0 DONE}
+		main Extensive Engineering {oreshenanigans@NONE DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/176, l='testing', x=184.78, y=65.00, z=111.96]]
+	Data Packs: vanilla, mod:forge (incompatible), mod:oreshenanigans (incompatible)
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

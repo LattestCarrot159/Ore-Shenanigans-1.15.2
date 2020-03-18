@@ -1,18 +1,21 @@
 package callsign_carrot.oreshenanigans;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import callsign_carrot.oreshenanigans.setup.BlockInit;
-import callsign_carrot.oreshenanigans.setup.ItemInit;
-import callsign_carrot.oreshenanigans.setup.ModSetup;
-import callsign_carrot.oreshenanigans.worldgen.ExtensiveOreGen;
+import callsign_carrot.oreshenanigans.init.BlockInit;
+import callsign_carrot.oreshenanigans.init.ContainerInit;
+import callsign_carrot.oreshenanigans.init.ItemInit;
+import callsign_carrot.oreshenanigans.init.ModSetup;
+import callsign_carrot.oreshenanigans.init.ModTileEntityTypes;
+import callsign_carrot.oreshenanigans.init.proxy.ClientProxy;
+import callsign_carrot.oreshenanigans.init.proxy.IProxy;
+import callsign_carrot.oreshenanigans.init.proxy.ServerProxy;
+import callsign_carrot.oreshenanigans.world.gen.ExtensiveOreGen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
@@ -23,19 +26,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Reference.MOD_ID)
-@Mod.EventBusSubscriber(modid = Reference.MOD_ID, bus = Bus.MOD)
+@Mod("oreshenanigans")
+@Mod.EventBusSubscriber(modid = "oreshenanigans", bus = Bus.MOD)
 public class OreShenanigans {
 	
 	public static ModSetup setup = new ModSetup();
 	
 	public static OreShenanigans instance;
-	public static final String modid = Reference.MOD_ID;
-	public static final String name = Reference.NAME;
-	public static final String version = Reference.VERSION;
-	public static final String acceptedMinecraftVersions = Reference.ACCEPTEDMCVERSIONS;
+	public static final String MOD_ID = "oreshenanigans";
 	
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
     public OreShenanigans() {
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -44,6 +44,8 @@ public class OreShenanigans {
         
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        ContainerInit.CONTAINERS.register(modEventBus);
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
